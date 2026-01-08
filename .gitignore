@@ -1,0 +1,12 @@
+vendor/
+.phpactor.json
+.idea/
+.vagrant/
+*.phpunit.result.cache
+.phpunit.cache/
+*.swp
+*.todos
+vimfilelist
+.vimfilelist
+composer.lock
+.php-cs-fixer.cache
