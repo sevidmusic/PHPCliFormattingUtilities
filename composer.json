@@ -1,0 +1,19 @@
+{
+    "name": "darling/php-cli-formatting-utilities",
+    "description": "Provides classes to format text for output to a terminal.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Darling\\PhpCliFormattingUtilities\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sevi Darling",
+            "email": "sdmwebsdm@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
