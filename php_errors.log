@@ -1,0 +1,1 @@
+[08-Jan-2026 14:00:38 America/New_York] PHP Warning:  Attempt to read property "title" on null in phar:///home/sevidarling/.local/share/nvim/mason/packages/phpactor/phpactor.phar/lib/Extension/LanguageServerConfiguration/Listener/AutoConfigListener.php on line 47

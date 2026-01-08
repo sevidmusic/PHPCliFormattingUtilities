@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Darling\\PhpCliFormattingUtilities\\": "src/"
+            "Darling\\PHPCliFormattingUtilities\\": "src/",
+            "Darling\\PHPCliFormattingUtilities\\tests\\": "tests/"
         }
     },
     "authors": [
@@ -17,7 +18,8 @@
     "minimum-stability": "stable",
     "require-dev": {
         "phpunit/phpunit": "^12.5",
-        "phpstan/phpstan": "^2.1"
+        "phpstan/phpstan": "^2.1",
+        "darling/php-darling-dev-tools": "^1.0"
     },
     "require": {
         "darling/php-unit-test-utilities": "^1.0"

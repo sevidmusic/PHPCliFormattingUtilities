@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b8161295f26659addac248ab31dbbba",
+    "content-hash": "5f72f3bedce0e8768c7816633609ccf3",
     "packages": [
         {
             "name": "darling/php-unit-test-utilities",
@@ -53,6 +53,50 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "darling/php-darling-dev-tools",
+            "version": "v1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sevidmusic/PHPDarlingDevTools.git",
+                "reference": "88754ca7965255e20d61ac62e5bd54af7de96303"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sevidmusic/PHPDarlingDevTools/zipball/88754ca7965255e20d61ac62e5bd54af7de96303",
+                "reference": "88754ca7965255e20d61ac62e5bd54af7de96303",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Darling\\PHPDarlingDevTools\\": "src/",
+                    "Darling\\PHPDarlingDevTools\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sevidmusic",
+                    "email": "sdmwebsdm@gmail.com"
+                }
+            ],
+            "description": "Development tools for development of Darling PHP libraries and projects. ",
+            "support": {
+                "issues": "https://github.com/sevidmusic/PHPDarlingDevTools/issues",
+                "source": "https://github.com/sevidmusic/PHPDarlingDevTools/tree/v1.0.9"
+            },
+            "time": "2024-02-10T02:41:19+00:00"
+        },
         {
             "name": "myclabs/deep-copy",
             "version": "1.13.4",
