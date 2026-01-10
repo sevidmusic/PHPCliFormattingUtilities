@@ -5,3 +5,4 @@ vendor/
 *.swp
 .vimfilelist
 .php-cs-fixer.cache
+php_errors.log
