@@ -2,8 +2,8 @@
 
 namespace Darling\PHPCliFormattingUtilities\tests\interfaces\exceptions;
 
-use \Darling\PHPCliFormattingUtilities\interfaces\exceptions\CliFormattingException;
-use \PHPUnit\Framework\Attributes\CoversClass;
+use Darling\PHPCliFormattingUtilities\interfaces\exceptions\CliFormattingException;
+use PHPUnit\Framework\Attributes\CoversClass;
 
 /**
  * The CliFormattingExceptionTestTrait defines common tests for
@@ -15,7 +15,6 @@ use \PHPUnit\Framework\Attributes\CoversClass;
 #[CoversClass(CliFormattingException::class)]
 trait CliFormattingExceptionTestTrait
 {
-
     /**
      * @var CliFormattingException $cliFormattingException
      *                              An instance of a
@@ -74,11 +73,9 @@ trait CliFormattingExceptionTestTrait
      *
      */
     protected function setCliFormattingExceptionTestInstance(
-        CliFormattingException $cliFormattingExceptionTestInstance
-    ): void
-    {
+        CliFormattingException $cliFormattingExceptionTestInstance,
+    ): void {
         $this->cliFormattingException = $cliFormattingExceptionTestInstance;
     }
 
 }
-

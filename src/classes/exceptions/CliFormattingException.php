@@ -2,10 +2,6 @@
 
 namespace Darling\PHPCliFormattingUtilities\classes\exceptions;
 
-use \Darling\PHPCliFormattingUtilities\interfaces\exceptions\CliFormattingException as CliFormattingExceptionInterface;
+use Darling\PHPCliFormattingUtilities\interfaces\exceptions\CliFormattingException as CliFormattingExceptionInterface;
 
-class CliFormattingException implements CliFormattingExceptionInterface
-{
-
-}
-
+class CliFormattingException implements CliFormattingExceptionInterface {}
