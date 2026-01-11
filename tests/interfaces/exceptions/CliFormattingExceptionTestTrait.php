@@ -91,7 +91,7 @@ trait CliFormattingExceptionTestTrait
     public function testCliFormattingExceptionCanBeThrownWithSpecifiedMessage(): void
     {
         $message = 'A formatting error occured.'
-            . 'Triggered by: testCliFormattingExceptionCanBeThrown';
+            . 'Triggered by: testCliFormattingExceptionCanBeThrownWithSpecifiedMessage';
         $this->expectException(CliFormattingException::class);
         $this->expectExceptionMessage($message);
         $this->throwCliFormattingException($message);
