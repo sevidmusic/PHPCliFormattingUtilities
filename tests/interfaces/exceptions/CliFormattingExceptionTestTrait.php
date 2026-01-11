@@ -3,6 +3,7 @@
 namespace Darling\PHPCliFormattingUtilities\tests\interfaces\exceptions;
 
 use Darling\PHPCliFormattingUtilities\interfaces\exceptions\CliFormattingException;
+use Darling\PHPCliFormattingUtilities\classes\exceptions\CliFormattingException as CliFormattingExceptionInstance;
 use PHPUnit\Framework\Attributes\CoversClass;
 
 /**
@@ -78,4 +79,61 @@ trait CliFormattingExceptionTestTrait
         $this->cliFormattingException = $cliFormattingExceptionTestInstance;
     }
 
+    public function testCliFormattingExceptionCanBeThrown(): void
+    {
+        $this->expectException(CliFormattingException::class);
+        $this->throwCliFormattingException(
+            'A formatting error occured.'
+            . 'Triggered by: testCliFormattingExceptionCanBeThrown',
+        );
+    }
+
+    public function testCliFormattingExceptionCanBeThrownWithSpecifiedMessage(): void
+    {
+        $message = 'A formatting error occured.'
+            . 'Triggered by: testCliFormattingExceptionCanBeThrown';
+        $this->expectException(CliFormattingException::class);
+        $this->expectExceptionMessage($message);
+        $this->throwCliFormattingException($message);
+    }
+
+    private function throwCliFormattingException(string $message = ''): void
+    {
+        throw new CliFormattingExceptionInstance($message);
+    }
+
+    /**
+     * Reports an error identified by $message if $condition is false.
+     *
+     * Note: This method should be inherited from the
+     *       PHPUnit\Framework\TestCase class.
+     *
+     * @param bool $condition The value to test.
+     *
+     * @param string $message A message to show if the test case
+     *                        failed.
+     *
+     * @see PHPUnit\Framework\TestCase
+     */
+    abstract public static function assertTrue(bool $condition, string $message = ''): void;
+
+    /**
+     * Excpect that the specified Exception is thrown.
+     *
+     * Note: This method should be inherited from the
+     *       PHPUnit\Framework\TestCase class.
+     *
+     * @see PHPUnit\Framework\TestCase
+     */
+    abstract public function expectException(string $exception): void;
+
+    /**
+     * Excpect that the specified Exception message was thrown.
+     *
+     * Note: This method should be inherited from the
+     *       PHPUnit\Framework\TestCase class.
+     *
+     * @see PHPUnit\Framework\TestCase
+     */
+    abstract public function expectExceptionMessage(string $exception): void;
 }

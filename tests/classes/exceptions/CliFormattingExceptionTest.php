@@ -27,9 +27,4 @@ class CliFormattingExceptionTest extends PHPCliFormattingUtilitiesTest
             new CliFormattingException(),
         );
     }
-
-    public function testTestCanRun(): void
-    {
-        $this->assertTrue(true);
-    }
 }
